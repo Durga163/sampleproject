@@ -1,5 +1,45 @@
+if else statements
+1)
 for num in range(2, 10):
     if num% 2 == 0:
         print("Found an even number", num)
         continue
      print("Found an odd number", num)
+
+
+2)
+for number in range(5):
+    if number == 2:
+       pass
+    print(number)
+
+
+3)
+x = int(input("please enter an integer:"))
+if x < 0:
+    x = 0
+    print('Negative changed to zero')
+elif x == 0:
+     print('zero')
+elif x == 1:
+     print('single')
+else:
+     print('more')
+
+
+4)
+ mark = int(input())
+if(mark>35):
+   print("pass")
+else:
+     print("Fail")
+
+
+ 5)
+score = int(input("score:"))
+if (score<35):
+   print("poor student")
+elif(score>35 and score<70):
+    print("average student")
+elif (score>70 and score<100):
+     print("good student")
