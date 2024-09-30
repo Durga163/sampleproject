@@ -1,1 +1,75 @@
-gh
+1)
+a = { 
+    "name": "emc",          
+    "age": 1,               
+    "location": "trichy",   
+    "students": ["bala", "john"]  
+}
+
+print(a)
+
+2)
+person = {
+    "name": "Alice",
+    "age": 30,
+    "city": "New York"
+}
+
+
+print("Name:", person["name"])
+print("Age:", person["age"])
+print("City:", person["city"])
+
+3)
+# Updating dictionary values
+car = {
+    "brand": "Toyota",
+    "model": "Camry",
+    "year": 2020
+}
+
+car["year"] = 2021
+print(car)
+
+4)
+
+student = {
+    "name": "John",
+    "grade": "A"
+}
+
+
+student["age"] = 20
+print(student)
+
+5)
+
+animal = {
+    "type": "Dog",
+    "name": "Buddy"
+}
+
+del animal["type"]
+print(animal)
+
+6)
+
+grocery_list = {
+    "apples": 5,
+    "bananas": 3,
+    "oranges": 4
+}
+
+print("Number of items in grocery list:", len(grocery_list))
+
+7)
+
+dict1 = {"a": 1, "b": 2}
+dict2 = {"b": 3, "c": 4}
+
+dict1.update(dict2)
+print(dict1)
+
+
+
+
