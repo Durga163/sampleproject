@@ -1,1 +1,32 @@
+class Bird:
+    def speak(self):
+        return "Tweet!"
+
+class Dog:
+    def speak(self):
+        return "Woof!"
+
+def animal_sound(animal):
+    print(animal.speak())
+
+my_bird = Bird()
+my_dog = Dog()
+
+animal_sound(my_bird)  
+animal_sound(my_dog)   
+
+2)
+class dad():
+    def phone(self):
+        print("Dads phone")
+class mom():
+    def sweet(self):
+        print("moms sweet")
+class son (dad,mom):
+     def laptop(self):
+         print("sons laptop")
+ram =son()
+ram.phone()
+ram.sweet()
+   
 
