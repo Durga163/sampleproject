@@ -1,1 +1,8 @@
-
+class animal:
+   def__init__(self.name):
+     self.__name(self):
+   def get_name(self):
+      return self.__name
+ animal = animal("lion")
+print(animal.get_name())
+        
