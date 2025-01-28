@@ -13,7 +13,6 @@ class Task(db.Model):
     completed = db.Column(db.Boolean, default=False)
 
 
-@app.route('/')
 def home():
     tasks = Task.query.all() 
     return render_template('index.html', tasks=tasks)
