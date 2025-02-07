@@ -1,7 +1,7 @@
 import sqlite3
 from tabulate import tabulate
 
-#
+
 conn = sqlite3.connect("employees.db")
 cursor = conn.cursor()
 
@@ -55,7 +55,7 @@ def search_employee(name):
         print("\n Employee Search Results:")
         print(tabulate(employees, headers=["ID", "Name", "Age", "Department", "Salary"], tablefmt="grid"))
 
-# Main Menu
+
 while True:
     print("\n Options: 1. Add Employee  2. View Employees  3. Update Salary  4. Delete Employee  5. Search Employee  6. Exit")
     choice = input("Enter your choice: ")
