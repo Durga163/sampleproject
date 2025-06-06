@@ -17,11 +17,11 @@ CREATE TABLE IF NOT EXISTS employees (
 ''')
 conn.commit()
 
+
 def add_employee(name, age, department, salary):
     cursor.execute("INSERT INTO employees (name, age, department, salary) VALUES (?, ?, ?, ?)", (name, age, department, salary))
     conn.commit()
     print(f" Employee '{name}' added successfully!")
-
 
 def view_employees():
     cursor.execute("SELECT * FROM employees")
@@ -32,7 +32,6 @@ def view_employees():
     else:
         print("\n Employee List:")
         print(tabulate(employees, headers=["ID", "Name", "Age", "Department", "Salary"], tablefmt="grid"))
-
 
 def update_salary(emp_id, new_salary):
     cursor.execute("UPDATE employees SET salary = ? WHERE id = ?", (new_salary, emp_id))
@@ -55,7 +54,7 @@ def search_employee(name):
         print("\n Employee Search Results:")
         print(tabulate(employees, headers=["ID", "Name", "Age", "Department", "Salary"], tablefmt="grid"))
 
-
+# Main Menu
 while True:
     print("\n Options: 1. Add Employee  2. View Employees  3. Update Salary  4. Delete Employee  5. Search Employee  6. Exit")
     choice = input("Enter your choice: ")
@@ -91,4 +90,3 @@ while True:
         print(" Invalid choice. Please try again.")
 ]
 conn.close()
-
