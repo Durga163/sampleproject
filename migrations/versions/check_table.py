@@ -1,5 +1,5 @@
+# check_tables.py
 from app import db
 
-
-print("Tables in the database:")
-print(db.engine.table_names())
+# Print table names in your SQLite database
+print("Available tables:", db.engine.table_names())
