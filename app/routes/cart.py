@@ -9,7 +9,7 @@ def get_db():
     try:
         yield db
     finally:
-        db.close()
+         db.close()
 
 @router.post("/cart/{user_id}", response_model=schemas.CartItemResponse)
 def add_to_cart(user_id: str, item: schemas.CartItemCreate, db: Session = Depends(get_db)):
